@@ -1,0 +1,116 @@
+*, *::before. *::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+
+}
+
+main,
+header,
+section,
+footer {
+	width: 100vw;
+	max-width: 100vw;
+	height: 101vh;
+	max-height: 100vw;
+	overflow: hidden;
+}
+
+main {
+	position: fixed;
+	opacity: 0%;
+}
+
+@supports (pointer-events: none) {
+	main {
+		pointer-events: none;
+	}
+}
+
+@supports not (pointer-events: none) { /* support for Opera Mini */
+	main {
+		left: -200%;
+	}
+}
+
+.btn {
+	font-family: 'BigNoodleTitling';
+	font-size: 2rem;
+	font-weight: bold;
+	border: none;
+	background-color: black;
+	color: #fff;
+	margin-top: 2%;	 
+	margin-bottom: 2%;
+	height: 2.5rem; 
+	letter-spacing: .5rem;
+} 
+
+.btn:hover {
+	background-color: var(--red-weak);
+	color: #fff;
+	font-weight: normal;
+} 
+
+.btn:active {
+	background-color: var(--red-strong));
+} 
+
+form p big,
+form p em,
+form p strong {
+	display: inline;
+}
+
+
+
+header {
+	position: relative;
+}
+
+
+.title {
+	font-family: "BigNoodleTitling";
+	font-size: 2.9rem;
+	width: 45%;
+	letter-spacing: .1em;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+
+.descriptor-1 {
+	width: 85%;
+	text-align: center;
+	font-family: "ft anima Medium";
+	font-size: 1.25rem;
+}
+
+.small-line-divider {
+	margin: 3%;
+	margin-left: 37%;
+	margin-right: 37%;
+	min-height: .5%;
+	max-height: .5%;
+	height: .5%;
+	background: red;
+}
+
+
+section {
+	background-color: pink;
+}
+
+section:nth-child(2n) {
+	background-color: blue;
+}
+
+footer {
+	background-color: red;
+}

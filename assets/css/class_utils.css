@@ -1,0 +1,41 @@
+.flexitems-left-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+}
+
+.flex-column-center-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.max-width100__max-height100 {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.marginAuto__padding0 {
+	margin: auto;
+	padding: 0;
+}
+
+.margin-Inherit__padding-Inherit {
+	margin: inherit;
+	padding: inherit;
+}
+
+
+.align-left {
+	text-align: left;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}

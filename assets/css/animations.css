@@ -1,0 +1,36 @@
+@keyframes s-card_ImgOut {
+	100% {
+		transform: translateX(-100%);
+		opacity: 0%;
+		}
+}
+
+
+@keyframes s-card_DescOut {
+	100% {
+		transform: translateY(100%);
+		opacity: 0%;
+		}	
+}
+
+@keyframes s-card_ImgIn {
+	0% {
+		transform: translateX(-50%);
+		opacity: 0%;
+		}	
+	100% {
+		transform: translateX(0%);
+		opacity: 100%;
+		}
+}
+
+@keyframes s-card_DescIn {
+	0% {
+		transform: translateY(100%);
+		opacity: 0%;
+		}	
+	100% {
+		transform: translateY(0%);
+		opacity: 100%;
+		}	
+}

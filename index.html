@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Заказать разработку программного обеспечения</title>
+		<link rel="preload" as="font" type="application/x-font-ttf" href="./assets/fonts/jet_set.ttf"/>
+		<link rel="preload" as="font" type="application/x-font-ttf" href="./assets/fonts/progresspixel_bold.ttf">
+		<link rel="preload" as="font" type="application/x-font-ttf" href="./assets/fonts/BigNoodleTitling.ttf"/>
+		<link rel="preload" as="font" type="application/x-font-ttf" href="./assets/fonts/Electrolize.ttf"/>
+		<link rel="preload" as="font" type="application/x-font-ttf" href="./assets/fonts/Gardens CM Regular.ttf"/>
+		<link rel="preload" as="font" type="application/x-font-ttf" href="./assets/fonts/Block-O.ttf">
+		<link rel="preload" as="font" type="application/x-font-opentype" href="./assets/fonts/ft_anima_Medium.otf"/>
+		<link rel="preload" as="font" type="application/x-font-opentype" href="./assets/fonts/GivenyFree.otf"/>
+		<link rel="stylesheet" href="./assets/css/main.css"/>
+		<link rel="stylesheet" href="./assets/css/class_utils.css"/>
+		<link rel="icon" href="./assets/images/icon.ico" type="image/x-icon"/>
+	</head>
+	<body>
+		<main class="flex-column-center-center" id="order-form-container">
+			<div id="major-win">
+				<p id="exit" onclick="bunishForm()">&times;</p>
+				<h1 id="major-win-title">Оформить заявку на услуги</h1>
+				<form id="form-box">
+					<div class="input-container" id="input-container-1">
+						<label for="credentials">Как можно к Вам обращаться?</label>
+						<input type="text" id="credentials" name="credentials" class="input-field" placeholder="Иванов Иван Иванович / кое-какой клиент"/>
+					</div>
+					<div class="input-container" id="input-container-2">
+						<label for="phone-number">Ваш телефон:</label>
+						<input type="tel" id="phone-number" name="phone-number" class="input-field" placeholder="7999888444"/>
+					</div>
+					<div class="input-container" id="input-container-3">
+						<label for="email-address">Ваш e-mail:</label>
+						<input type="email" id="email-address" name="email-address" class="input-field" required placeholder="example@example.com"/>
+				</div>
+				<div class="input-container" id="input-container-4">
+					<label for="client-request">Расскажите, о чём будет Ваш запрос, какие у Вас есть вопросы.</label>
+					<textarea id="client-request" name="client-request" required></textarea>
+				</div>
+				<button class="btn" id="send-confirm">Отправить</button>
+				<p class="terms">Нажимая <big>"Отправить"</big> Вы соглашаетесь с нашей <em>политикой по обработке персональных данных</em>. <strong>theFirm</strong> обещает бережно и ответственно обращаться с вашей информацией.</p>
+			</form>
+			</div>
+		</main>
+		<header class="flexitems-left-center">
+			<div id="overlay"></div> <!-- Чтобы затемнить фон -->
+			<div id="header-skewbox"></div>
+			<h4 id="logo" title="theFrim | вымышленая компания">theFirm</h4>
+			<article class="contacts">
+				<ul>
+					<li><a href="tel:+73468765876897695">тел: +73468765876897695</a></li>
+					<li><a href="mailto:goodmail@neverexistedsite.com">e-mail: goodmail@neverexistedsite.com</a></li>
+				</ul>
+			</article>
+			<h1 class="title">Програмное обеспечение</h1>
+			<h1 class="title" id="main-title-b">на заказ</h1>
+			<h3 id="sub-title">Наша комманда мастеров всегда готова разработать качественное программное обеспечение согласно вашим пожеланиям и запросам</h3>
+			<div id="action-box">
+				<a id="button-action">ОФОРМИТЬ</a>
+			</div>
+		</header>
+		<section Id="services">
+			<div id="services-menu">
+				<div class="service-info-card-select marginAuto__padding0" id="bigData">
+					<h5 class="service-card-name margin-Inherit__padding-Inherit">Big Data</h5>
+				</div>
+				<div class="service-info-card-select marginAuto__padding0" id="refactoring">
+					<h5 class="service-card-name margin-Inherit__padding-Inherit">Рефакторинг</h5>
+				</div>
+				<div class="service-info-card-select marginAuto__padding0" id="webDev">
+					<h5 class="service-card-name margin-Inherit__padding-Inherit">Веб-разработка</h5>
+				</div>
+				<div class="service-info-card-select marginAuto__padding0" id="automation">
+					<h5 class="service-card-name margin-Inherit__padding-Inherit">Автоматизация</h5>
+				</div>
+				<div class="service-info-card-select marginAuto__padding0" id="support">
+					<h5 class="service-card-name margin-Inherit__padding-Inherit">Поддержка</h5>
+				</div>
+			</div>
+			<div id="services-info-box">
+				<div id="circles-box">
+					<div class="circles" id="circle-1"></div>
+					<div class="circles" id="circle-2"></div>
+					<div class="circles" id="circle-3"></div>
+					<div class="circles" id="circle-4"></div>
+					<div class="circles" id="circle-5"></div>
+					<div class="circles" id="circle-6"></div>
+					<div class="circles" id="circle-7"></div>
+					<div class="circles" id="circle-8"></div>
+					<div class="circles" id="circle-9"></div>
+				</div>
+				<div id="service-info-card">
+					<img id="img-show" src="./assets/images/big_data.jpg" alt="изображение">
+					<p class="descriptor-1 marginAuto__padding0">Мы повысим эффективность планирования вашего труда благодаря внедрению высококлассных статистических моделей, которые включают принципы обработки больших данных и применяют системы искусственного интеллекта.</p>
+				</div>
+			</div>
+		</section>
+		<section>
+			
+		</section>
+		<section>
+			
+		</section>
+		<section>
+			
+		</section>
+		<section>
+			
+		</section>
+		<footer>
+			
+		</footer>
+
+		<script src="./script.js"></script>
+		<noscript>У вас не включен или не поддерживается JavaScript :(</nosript>
+	</body>
+</html>
