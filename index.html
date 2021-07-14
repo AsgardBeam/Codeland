@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru_RU">
+<html lang="ru-RU">
 	<head>
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Заказать разработку программного обеспечения</title>
-		<link rel="preload" as="font" type="application/x-font-ttf" href="./assets/fonts/jet_set.ttf"/>
-		<link rel="preload" as="font" type="application/x-font-ttf" href="./assets/fonts/progresspixel_bold.ttf">
-		<link rel="preload" as="font" type="application/x-font-ttf" href="./assets/fonts/BigNoodleTitling.ttf"/>
-		<link rel="preload" as="font" type="application/x-font-ttf" href="./assets/fonts/Electrolize.ttf"/>
-		<link rel="preload" as="font" type="application/x-font-ttf" href="./assets/fonts/Gardens CM Regular.ttf"/>
-		<link rel="preload" as="font" type="application/x-font-ttf" href="./assets/fonts/Block-O.ttf">
-		<link rel="preload" as="font" type="application/x-font-opentype" href="./assets/fonts/ft_anima_Medium.otf"/>
-		<link rel="preload" as="font" type="application/x-font-opentype" href="./assets/fonts/GivenyFree.otf"/>
+		<link rel="preload" as="font" href="./assets/fonts/jet_set.ttf"/>
+		<link rel="preload" as="font" href="./assets/fonts/progresspixel_bold.ttf">
+		<link rel="preload" as="font" href="./assets/fonts/BigNoodleTitling.ttf"/>
+		<link rel="preload" as="font" href="./assets/fonts/Electrolize.ttf"/>
+		<link rel="preload" as="font" href="./assets/fonts/Gardens CM Regular.ttf"/>
+		<link rel="preload" as="font" href="./assets/fonts/Block-O.ttf">
+		<link rel="preload" as="font" href="./assets/fonts/ft_anima_Medium.otf"/>
+		<link rel="preload" as="font" href="./assets/fonts/GivenyFree.otf"/>
 		<link rel="stylesheet" href="./assets/css/main.css"/>
 		<link rel="stylesheet" href="./assets/css/class_utils.css"/>
 		<link rel="icon" href="./assets/images/icon.ico" type="image/x-icon"/>
@@ -43,21 +43,51 @@
 			</form>
 			</div>
 		</main>
-		<header class="flexitems-left-center">
+		<nav id="nav-2">
+			<div id="nav-2-btn" class="flex-column-center-center max-width100__max-height100">
+				<div class="btn-line max-width100__max-height100"></div>
+				<div class="btn-line max-width100__max-height100"></div>
+				<div class="btn-line max-width100__max-height100"></div>
+			</div>
+			<ul id="nav-list-2">
+				<li><a href="#services" title="Услуги" class="nav-link">Услуги</a></li>
+				<li><a href="#portfolio" title="Портфолио" class="nav-link">Портфолио</a></li>
+				<li><a href="#reviews" title="Отзывы" class="nav-link">Отзывы</a></li>
+				<li><a href="#team" title="Команда" class="nav-link">Команда</a></li>
+				<li><a href="#footer" title="Низ" class="nav-link">Информация</a></li>
+				</ul>
+		</nav>
+		<div id="toheader-wrapper">
+			<div id="arrow-wrapper">
+				<div id="arrow-left" class="arrow-parts"></div>
+				<div id="arrow-right" class="arrow-parts"></div>
+			</div>
+			<a href="#header" title="В начало" id="toheader-link"></a>
+		</div>
+		<header class="flex-left-center"  id="header">
 			<div id="overlay"></div> <!-- Чтобы затемнить фон -->
 			<div id="header-skewbox"></div>
-			<h4 id="logo" title="theFrim | вымышленая компания">theFirm</h4>
+			<h4 class="logo" title="theFrim | вымышленная компания">theFirm</h4>
+			<nav id="nav-1">
+				<ul id="nav-list-1">
+					<li><a href="#services" title="Услуги" class="nav-link">#Услуги</a></li>
+					<li><a href="#portfolio" title="Портфолио" class="nav-link">#Портфолио</a></li>
+					<li><a href="#reviews" title="Отзывы" class="nav-link">#Отзывы</a></li>
+					<li><a href="#team" title="Команда" class="nav-link">#Команда</a></li>
+					<li><a href="#footer" title="Низ" class="nav-link">#Информация</a></li>
+				</ul>
+			</nav>
 			<article class="contacts">
 				<ul>
-					<li><a href="tel:+73468765876897695">тел: +73468765876897695</a></li>
-					<li><a href="mailto:goodmail@neverexistedsite.com">e-mail: goodmail@neverexistedsite.com</a></li>
+					<li><a href="tel:+73468765876897695">тел: +7-(346-876)-587-689-769-5</a></li>
+					<li><a href="mailto:goodmail@neverexistedsite.com">e-mail: mail@noexist.mars</a></li>
 				</ul>
 			</article>
 			<h1 class="title">Програмное обеспечение</h1>
 			<h1 class="title" id="main-title-b">на заказ</h1>
 			<h3 id="sub-title">Наша комманда мастеров всегда готова разработать качественное программное обеспечение согласно вашим пожеланиям и запросам</h3>
-			<div id="action-box">
-				<a id="button-action">ОФОРМИТЬ</a>
+			<div class="action-box">
+				<a class="button-action">ОФОРМИТЬ</a>
 			</div>
 		</header>
 		<section Id="services">
@@ -96,23 +126,182 @@
 				</div>
 			</div>
 		</section>
-		<section>
-			
+		<section id="portfolio" class="align-center">
+			<div id="wrapper-portfolio-heading">
+				<h1 class="title" id="portfolio-heading">Наше портфолио</h1>
+			</div>
+			<div id="wrapper-the-3d-slider">
+				<div id="the-3d-slider">
+					<div class="surface" id="rotation-axis"></div>
+					<div class="surface" id="surface-1">
+						<p class="descriptor-1"><br/><big><strong>Интегратор</strong></big><br/><br/>Синхронизировать и объединить все социальные сети в одном удобном мобильном приложении, быть на волне всех важных событий.</p>
+					</div>
+					<div class="surface" id="surface-2">
+						<p class="descriptor-1"><br/><big><strong>NiceView</strong></big><br/><br/>Продвинутая браузерная камера для мобильного телефона, использующая матрицу искусственного интеллекта.</p>
+					</div>
+					<div class="surface" id="surface-3">
+						<p class="descriptor-1"><br/><big><strong>Янгуг</strong></big><br/><br/>Система веб-услуг высшего класса, сравнимая с веб-порталами Яндекс и Google.</p>
+					</div>
+					<div class="surface" id="surface-4">
+						<p class="descriptor-1"><br/><big><strong>Небобиты</strong></big><br/><br/>Интерактивное хранилище информации, произведённой алгоритмами обработки больших данных, которым пользуются миллионы.</p>
+					</div>
+					<div class="surface" id="surface-5">
+						<p class="descriptor-1"><br/><big><strong>SmartМашины1</strong></big><br/><br/>Веб-сайт лидирующей на рынке робототехники компании, которая славится беспилотными умными экскаваторами.</p>
+					</div>
+					<div class="surface" id="surface-6">
+						<p class="descriptor-1"><br/><big><strong>Око</strong></big><br/><br/>Динамичная система наблюдения за отрытыми общественными потоками больших данных с целью прогнозирования.</p>
+					</div>
+					<div class="surface" id="surface-7">
+						<p class="descriptor-1"><br/><big><strong>iБизнесток700</strong></big><br/><br/>Мы с гордостью сообщаем, что выполнили главную роль в цифровой модернизации холдинга iБизнесток700.</p>
+					</div>
+					<div class="surface" id="surface-8">
+						<p class="descriptor-1"><br/><big><strong>PaintGreat</strong></big><br/><br/><small>Популярный браузерный редактор графики, рисующий за Вас, на основе голосовых приказов и текстовых сообщений.</small></p>
+					</div>
+				</div>
+			</div>
+			<div class="action-box" id="call-to-action-2">
+				<a class="button-action">ОФОРМИТЬ</a>
+			</div>
 		</section>
-		<section>
+		<section id="reviews">
+			<div id="wrapper-reviews-quotes" class="flex-row-center-center">
+				<div id="reviews-quotes-left-tab">
+					<figure class="align-center">
+						<img src="" id="client-face" alt="client logo"/>
+						<figcaption id="client-name"></figcaption>
+					</figure>
+					<p id="client-summary"></p>
+				</div>
+				<div id="reviews-quotes-right-tab" class="grid-center-center">
+					<h2 id="review-heading"  class="align-center"></h2>
+					<p id="review"></p>
+					<div id="small-line-divider"></div>
+				</div>
+			</div>
+			<div id="wrapper-reviews-buttons"> 
+				<ul id='the-rev-buttons-aura' class="flex-row-center-center">
+					<li class="rev-btn-container">
+						<span class="wrapper-rev-btn">
+							<a class="rev-button" id="rev-btn-1a"></a>
+						</span>
+					</li>
+					<li class="rev-btn-container">
+						<span class="wrapper-rev-btn">
+							<a class="rev-button" id="rev-btn-2a"></a>
+						</span>
+					</li>
+					<li class="rev-btn-container">
+						<span class="wrapper-rev-btn">
+							<a class="rev-button" id="rev-btn-3a"></a>
+						</span>
+					</li>
+					<li class="rev-btn-container">
+						<span class="wrapper-rev-btn">
+							<a class="rev-button" id="rev-btn-4a"></a>
+						</span>
+					</li>
+					<li class="rev-btn-container">
+						<span class="wrapper-rev-btn">
+							<a class="rev-button" id="rev-btn-5a"></a>
+						</span>
+					</li>
+				</ul>
+				<ul id='the-rev-buttons-real' class="flex-row-center-center">
+					<li class="rev-btn-container" >
+						<span class="wrapper-rev-btn">
+							<a class="rev-button" id="rev-btn-1"></a>
+						</span>
+					</li>
+					<li class="rev-btn-container" >
+						<span class="wrapper-rev-btn">
+							<a class="rev-button" id="rev-btn-2"></a>
+						</span>
+					</li>
+					<li class="rev-btn-container" >
+						<span class="wrapper-rev-btn">
+							<a class="rev-button" id="rev-btn-3"></a>
+						</span>
+					</li>
+					<li class="rev-btn-container" >
+						<span class="wrapper-rev-btn">
+							<a class="rev-button" id="rev-btn-4"></a>
+						</span>
+					</li>
+					<li class="rev-btn-container">
+						<span class="wrapper-rev-btn">
+							<a class="rev-button" id="rev-btn-5"></a>
+						</span>
+					</li>
+				</ul>
+			</div>
 			
-		</section>
-		<section>
-			
-		</section>
-		<section>
-			
-		</section>
-		<footer>
-			
-		</footer>
 
+		</section>
+
+		<section id='team' class="grid-space-around-center">
+			<div id="team-background">
+			</div>
+			<div class="team-player ">
+				<h2 class="t-player-name flex-column-center-center">Элис МакГрей</h2>
+				<img src="./assets/images/team_manager.jpg" alt="the team player's photo: the manager" class="t-player-photo"/>
+				<p class="t-player-job flex-column-center-center">Менеджер проекта</p>
+			</div>
+			<div class="team-player">
+				<h2 class="t-player-name flex-column-center-center">Шен Пак-Кво</h2>
+				<img src="./assets/images/team_designer.jpg" alt="the team player's photo: the designer" class="t-player-photo"/>
+				<p class="t-player-job flex-column-center-center">Маркетолог, SEO-специалист</p>
+			</div>
+			<div class="team-player">
+				<h2 class="t-player-name flex-column-center-center">Мишель Дигингтстон</h2>
+				<img src="./assets/images/team_marketing.jpg" alt="the team player's photo: the marketing specialist" class="t-player-photo"/>
+				<p class="t-player-job flex-column-center-center">UI/UX-дизайнер, Веб-дизайнер</p>
+			</div>
+			<div class="team-player">
+				<h2 class="t-player-name flex-column-center-center">Артур Браун</h2>
+				<img src="./assets/images/team_markuper.jpg" alt="the team player's photo: the markuper" class="t-player-photo"/>
+				<p class="t-player-job flex-column-center-center">Верстальщик, Контент-менеджер</p>
+			</div>
+			<div class="team-player">
+				<h2 class="t-player-name flex-column-center-center">Василий Петров</h2>
+				<img src="./assets/images/team_frontender.jpg" alt="the team player's photo: the frontender" class="t-player-photo"/>
+				<p class="t-player-job flex-column-center-center">Программист, Front-end</p>
+			</div>
+			<div class="team-player">
+				<h2 class="t-player-name flex-column-center-center">Эдрю Хофман</h2>
+				<img src="./assets/images/team_backender.jpg" alt="the team player's photo: the backender" class="t-player-photo"/>
+				<p class="t-player-job flex-column-center-center">Программист, Back-end</p>
+			</div>
+		</section>
+		<footer id="footer" class="grid-space-around-center">
+			<div class="special-options-list flex-left-center">
+				<h2>Навигация</h2>
+				<ul>
+					<li><a href="#header" title="Начало" class="footer-link">Титул</a></li>
+					<li><a href="#services" title="Услуги" class="footer-link">Услуги</a></li>
+					<li><a href="#portfolio" title="Портфолио" class="footer-link">Портфолио</a></li>
+					<li><a href="#reviews" title="Отзывы" class="footer-link">Отзывы</a></li>
+					<li><a href="#team" title="Команда" class="footer-link">Команда</a></li>
+				</ul>
+			</div>
+			<div class="action-box marginAuto__padding0" id="call-to-action-3">
+				<a class="button-action">ОФОРМИТЬ</a>
+			</div>
+			<div class="special-options-list flex-left-center">
+				<address class="descriptor-1 marginAuto__padding0 align-left"><br><br>Адрес</br></br>4586465, г. Винтерфелл, ул. Брана, д. 18, корп. 8
+				</address>
+			</div>
+			<div id="social-sites-contants" title="Посетить наши соц-сети"> 
+				<a href="https://linked.in" id="in-link" title="in-logo" class="footer-soc-links"></a>
+				<a href="https://youtube.com" id="youtube-link"  class="footer-soc-links"></a>
+				<a href="https://facebook.com" id="facebook-link" class="footer-soc-links"></a>
+				<a href="https://instagram.com" id="instagram-link"  class="footer-soc-links"></a>
+				<a href="https://twitter.com" id="twitter-link" class="footer-soc-links"></a>
+			</div>
+			<p class="descriptor-1 marginAuto__padding0">Этот веб-сайт порождён сугубо фантазией веб-разработчика <a href="https://github.com/scriptsBender" title="Перейти на мой Github" class="footer-link">scriptsBender</a> в качестве тестового демонстрационного проекта про "landing page". Все указанные здесь названия, имена, логотипы, сервисные оферты и тому подобные сущности носят исключительно вымышленный характер.
+Использованные изобвие той полиражения и шрифты взяты из открытых свободных источников, а значит подпадают под дейсттики об интеллектуальной собственности, на которую добровольно согласились их авторы/владельцы.<br>&copy; All rights reserved</p>
+			<h4 class="logo" title="theFrim | вымышленная компания">theFirm</h4>
+		</footer>
 		<script src="./script.js"></script>
-		<noscript>У вас не включен или не поддерживается JavaScript :(</nosript>
+		<noscript>У вас не включен или не поддерживается JavaScript :(</noscript>
 	</body>
 </html>

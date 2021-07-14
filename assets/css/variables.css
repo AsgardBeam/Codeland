@@ -1,4 +1,10 @@
 :root {
 	--red-weak: rgb(200, 0, 0);
 	--red-strong: rgb(255, 0, 0);
+
+	--viewport-small-mobile: 576px;
+	--viewport-mobile: 768px;
+	--viewport-desktop: 992px;
 }
+
+

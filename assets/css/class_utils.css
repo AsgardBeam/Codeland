@@ -1,16 +1,16 @@
-.flexitems-left-center {
+.flex-left-center {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: left;
 }
 
-.flex-column-center-center {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.grid-space-around-center {
+	display: grid;
+	justify-content: space-around;
+	align-content: center;
 }
+
 
 .max-width100__max-height100 {
 	max-width: 100%;
@@ -38,4 +38,29 @@
 
 .align-right {
 	text-align: right;
+}
+
+.flexrow-center-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-row-center-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-column-center-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.grid-center-center {
+	display: grid;
+	justify-content: center;
+	align-content: center;
 }
