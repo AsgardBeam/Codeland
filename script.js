@@ -6,6 +6,7 @@
 // small databases
 const servicesImages = {bigData: "big_data.jpg", refactoring: "refactoring.jpg", webDev: "web_dev.jpg", automation: "automation.png", support: "support.png"};
 const servicesDecriptions = {bigData: "Мы повысим эффективность планирования Вашего труда благодаря внедрению высококлассных статистических моделей, которые включают принципы обработки больших данных и применяют системы искусственного интеллекта.", refactoring: "Мы качественно модернизируем Вашу кодовую базу согласно передовым технологическим стандартам, напишем чистую документацию, параллельно бесплатно обучим Ваших сотрудников пользоваться обновлёнными компонентами.", webDev: "Мы сделаем для Вашего бизнеса актуальные конкурентные веб-приложения (в мобильной и декстопной форме), взяв на себя дизайнерские работы, всю техническую разработку, SEO-оптимизацию, загрузку на хостинг-сервер и т.д.", automation: "Мы вычислим малополезные практики и неактуальные рутины в Вашем предприятии, по итогам чего обстоятельно составим прогрессивный план для цифровизации Вашего труда, на основе которого обеспечим автоматизацией.", support: "Мы бесплатно предоставляем нашим клиентам услуги консультации и поддержки в течение года, в том числе мы всегда открыты для оказания профессиональной консультации/поддержки любым другим нанимателям."};
+const portfolioContents = [ {name: "Интегратор", image: "./assets/images/product_1.png", desc: "Синхронизировать и объединить все социальные сети в одном удобном мобильном приложении, быть на волне всех важных событий."}, {name: "NiceView", image: "./assets/images/product_2.jpg", desc: "Продвинутая браузерная камера для мобильного телефона, использующая матрицу искусственного интеллекта."}, {name: "iБизнесток700", image: "./assets/images/product_7.jpg", desc: "Мы с гордостью сообщаем, что выполнили главную роль в цифровой модернизации холдинга iБизнесток700."}, {name: "Янгуг", image: "./assets//images/product_3.png", desc: "Система веб-услуг высшего класса, сравнимая с веб-порталами Яндекс и Google."}, {name: "megaCloudBits", image: "./assets/images/product_4.png", desc: "Интерактивное хранилище информации, произведённой алгоритмами обработки больших данных, которым пользуются миллионы."}, {name: "SmartМашины", image: "./assets/images/product_5.jpg", desc: "Веб-сайт лидирующей на рынке робототехники компании, которая славится беспилотными умными экскаваторами."}, {name: "Око", image: "./assets/images/product_6.jpg", desc: "инамичная система наблюдения за отрытыми общественными потоками больших данных с целью прогнозирования."}, {name: "PaintGreat", image: "./assets/images/product_8.jpg", desc: "Популярный браузерный редактор графики, рисующий за Вас, на основе голосовых приказов и текстовых сообщений."} ];
 const reviewsData = {client1: {logo: "./assets/images/client1.jpg", info: {headline: "Не пытаются с тебя снять деньги", clientname: 'ООО «ТехноЕдаа»', summary: "доставка, оптовая торговля, Санкт-Петербург", review: "Эта компания очень хорошая. Нам понравилось, что они не пытаются заработать на каждом клиенте. Не пытаются с тебя снять деньги. И с тобой сотрудничают и помогают."}},  client2: {logo: "./assets/images/client2.jpg", info: {headline: "Быстро реагирует на запросы", clientname: "DasIstKohler", summary: "кондиционеры, климат-контроль, Берлин", review: "Мы, как клиенты, можем сказать, что эта компания является одной из лучших в Европе и Азии, потому что она очень быстро реагирует на запросы, всегда дает ответы на технические вопросы, помогает с диплоем и т. д. Они очень быстро реагируют на запросы. Это важно для того, чтобы клиент не тратил свое время и деньги, когда он нуждается в них."}}, client3: {logo: "./assets/images/client3.jpg", info: {headline: "Есть все необходимое", clientname: '"ОАО Дзинь-Дзань99"', summary: "компьютерные сети, техобслуживание, Сеул", review: "Это очень хорошая компания. Нас все устраивает. Мы имеем дело с ними уже три года и мы не разочарованы. Мы можем сказать, что в этой компании есть все необходимое, чтобы выполнять любые виды работ. Но мы также можем сказать,что это одна из лучших компаний в Корее."}}, client4: {logo: "./assets/images/client4.jpg", info: {headline: "Очень опытный технический персонал", clientname: 'Община "Good Settler"', summary: "строительство, общественные услуги, Торонто", review: "Мы работаем с этой компанией около трех лет. За это время они сделали очень много для нас. У них работает очень опытный технический персонал. Они понимают нас и даже если у нас есть проблемы, они всегда помогают. Это действительно хорошее сотрудничество."}}, client5: {logo: "./assets/images/client5.png", info: {headline: "Уже более восьми лет", clientname: 'ВТС-buildMatrix Inc.', summary: "электромеханическое оборудование, роботы, Пекин", review: "Мы пользуемся услугами этой компании уже более восьми лет. Они работают очень хорошо и в течении всего этого времени никогда не подводили нас. В этой организации работают профессионалы своего дела. Они всегда готовы помочь и решить проблему, если она возникла. Мы очень довольны ими. Мы всегда можем обращаться к ним и они с радостью помогут нам."}}};
 
 // selecting DOM nodes
@@ -41,17 +42,22 @@ const infocardImage = document.querySelector("#img-show");
 const infocardDivider = document.querySelector("#service-info-card .small-line-divider");
 const infocardDescriptor = document.querySelector("#service-info-card .descriptor-1");
 
-const portfolio3DsSlider = document.querySelector("#the-3d-slider");
-const portfolioSliderAxis = document.querySelector("#rotation-axis");
-const portfolio3DsControler = document.querySelector("#speed-up-rotationReal");
-const r3DsCtrlArrowL = document.querySelector("#speedUpLeftReal");
-const r3DsCtrlArrowM = document.querySelector("#speedUpMidReal");
-const r3DsCtrlArrowR = document.querySelector("#speedUpRightReal");
+const portfolioCard = document.querySelector("#portfolio-card");
+const portfolioProjectName = document.querySelector("#project-name-h3");
+const portfolioCardWrapper = document.querySelector("#portfolio-card-content-wrapper");
+const portfolioImageContainer = document.querySelector("#image-container");
+const portfolioImage = document.querySelector("#portfolio-image");
+const portfolioDecsription = document.querySelector("#portfolio-card-description");
+const portfolioControls = document.querySelector("#portfolio-controls");
+const portfolioTheControls = document.querySelector("#the-controls");
+const portfolioOverlay = document.querySelector("#the-overlay");
+const portfolioCircle = document.querySelector("#portfolio-controls-circle-container");
+const portfolioArrowTop = document.querySelector("#controls-arrow-top");
+const portfolioArrowBottom= document.querySelector("#controls-arrow-bottom");
 
 const revBtnsBoxAuras = document.getElementsByClassName("rev-btn-container");
 const revBtnsBoxReal = document.querySelectorAll("#the-rev-buttons-real .rev-btn-container");
 const revButtons = document.querySelectorAll(".rev-button ");
-
 
 const revQuotesLeftTab = document.querySelector("#reviews-quotes-left-tab");
 const revClientFace = document.querySelector("#client-face");
@@ -82,6 +88,10 @@ servicesRefactoring.addEventListener("click", slideCards);
 servicesWebdev.addEventListener("click", slideCards);
 servicesAutomation.addEventListener("click", slideCards);
 servicesSupport.addEventListener("click", slideCards);
+
+portfolioControls.addEventListener("click", circleClickReaction);
+portfolioCardWrapper.addEventListener("mouseover", imageShrinking);
+portfolioCardWrapper.addEventListener("mouseleave", imageExpanding);
 
 /* __ SECTION  main  __  */
 
@@ -140,7 +150,6 @@ function hideMenu() {
 // ## to set permanent :active style for an option of the #servicesMenu
 function clickedMenu(item) {
 	item.style.fontSize = "3rem";
-	item.style.textShadow = "0 0 10rem #fff700, 0 0 10rem #fff700, 0 0 10rem #fff700, 0 0 10rem #fff700, 0 0 10rem #fff700, 0 0 10rem #fff700, 0 0 10rem #fff700, 0 0 10rem #fff700, 0 0 10rem #fff700, 0 0 10rem #fff700";
 }
 
 // ## remove the permanent :active style from all the #servicesMenu options
@@ -148,7 +157,6 @@ function resetMenu() {
 	
 	servicesMenu.querySelectorAll(".service-info-card-select").forEach((item) => {
 		item.style.fontSize = "2rem";
-		item.style.textShadow = "none";
 	}
 	);
 }
@@ -183,7 +191,103 @@ function slideCards() {
 
 /* __ SECTION  #portfolio  __  */
 
-// none
+// dymanic styling
+
+function circleClickReaction() {
+	portfolioCircle.style.transform = "scale(250%)";
+	setTimeout(() => {portfolioCircle.style = ""}, 200);
+}
+
+function imageShrinking() {
+	portfolioImageContainer.style = "filter: saturate(125%); margin-top: 3%; max-width: 88%; min-width: 88%; max-height: 60%; min-height: 60%;";
+
+}
+
+function imageExpanding() {
+	portfolioImageContainer.style = "";
+}
+
+
+// sliding logic
+
+const PortfolioSlider = {
+	index: 0,
+	isInProgress: false,
+	playAnimation() {
+
+		portfolioCard.style.animationPlayState = 'running';
+		setTimeout(() => {
+			portfolioCard.style.animationPlayState = 'rotateCard';
+			portfolioCard.style.animationPlayState = 'paused';
+			PortfolioSlider.isInProgress = false;
+			portfolioOverlay.style.visibility = "hidden";
+		}, 4000);
+
+		portfolioProjectName.style.opacity = "0%";
+		setTimeout(() => {
+			portfolioProjectName.style = "";
+		}, 3000);
+	},
+	refreshConent(name, img, desc) {
+		portfolioProjectName.innerText = name;
+		portfolioImage.src = img;
+		portfolioDecsription.innerText = desc;
+	},
+	slideUp() {
+
+		if (PortfolioSlider.isInProgress == false) {
+			
+			portfolioOverlay.style.visibility = "visible";
+
+			PortfolioSlider.index += 1;
+			
+			PortfolioSlider.index = PortfolioSlider.index >= 8 ? 0 : PortfolioSlider.index;
+
+			let project = portfolioContents[PortfolioSlider.index];
+
+			let newName = project.name;
+			let newImage = project.image;
+			let newDescription = project.desc;
+
+			PortfolioSlider.playAnimation();
+
+			setTimeout(() => {
+				PortfolioSlider.refreshConent(newName, newImage, newDescription);
+			}, 1000);
+
+			PortfolioSlider.isInProgress = true;
+		}
+		
+	},
+	slideDown() {
+		if (PortfolioSlider.isInProgress == false) {
+			
+			portfolioOverlay.style.visibility = "visible";
+			
+			PortfolioSlider.index -= 1;
+			console.log('PortfolioSlider.index 1', PortfolioSlider.index);
+			PortfolioSlider.index = PortfolioSlider.index <= -1 ? 7 : PortfolioSlider.index;
+			console.log('PortfolioSlider.index 2', PortfolioSlider.index);
+			let project = portfolioContents[PortfolioSlider.index];
+			console.log('project', project);
+			let newName = project.name;
+			let newImage = project.image;
+			let newDescription = project.desc;
+
+			PortfolioSlider.playAnimation();
+
+			setTimeout(() => {
+				PortfolioSlider.refreshConent(newName, newImage, newDescription);
+			}, 1000);
+
+			PortfolioSlider.isInProgress = true;
+
+		}
+	}
+};
+
+portfolioArrowTop.addEventListener("click", PortfolioSlider.slideUp);
+portfolioArrowBottom.addEventListener("click", PortfolioSlider.slideDown);
 
 /* SECTION #reviews */
 
@@ -296,7 +400,7 @@ function slideReview(target) {
 	revClientSummary.style.animationName = '';
 	revQuotesRightTab.style.animationName = '';
 
-	function reassingAll() {
+	function refreshingAll() {
 		revClientFace.style.animationName = 'clientFaceRefresh-Full';
 		revClientName.style.animationName = 'clientNameRefresh-Full';
 		revClientSummary.style.animationName = 'clientSummaryRefresh-Full';
@@ -315,7 +419,7 @@ function slideReview(target) {
 		revClientSummary.innerText = reviewsData[`${target}`].info.summary;
 	}
 	
-	setTimeout(reassingAll, 5);
+	setTimeout(refreshingAll, 5);
 	setTimeout(refreshRightTab, 1550);
 	setTimeout(refreshLeftTab, 3005);
 
@@ -362,7 +466,7 @@ function responsiveScrolling() {
 function nav2CssControll() {
 	
 	let topPoint = headerClientHeight;
-	let bottomPoint = documentHeight - footerClientHeight;
+	let bottomPoint = documentHeight - footerClientHeight - 30;
 	let lineHeight = scrollingPoint;
 
 
@@ -381,10 +485,12 @@ function nav2CssControll() {
 	if (topPoint > lineHeight) {
 		nav2Btn.style.visibility = "hidden";
 		toheader.style.visibility = "hidden";
+		nav2List.style = "";
 	}
 	if (bottomPoint < lineHeight) {
 		nav2Btn.style.visibility = "hidden";
 		toheader.style.visibility = "hidden";
+		nav2List.style = "";
 	}
 
 }

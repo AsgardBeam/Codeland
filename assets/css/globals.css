@@ -138,6 +138,13 @@ a {
 	border: .1rem solid #fff;
 }
 
+.bigLetters {
+	font-weight: 900;
+}
+
+.cursiceLetters {
+	font-style: italic;
+}
 
 
 .descriptor-1 {

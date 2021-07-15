@@ -35,9 +35,20 @@
 		}	
 }
 
-@keyframes rotate3DModel {
-	0% {transform: rotateY(-135deg);}
-	100% {transform: rotateY(225deg);}
+@keyframes rotateCard {
+	0% {
+		transform: rotateY(-180deg);
+	}
+	25% {
+		opacity: 0%;
+	}
+
+	75% {
+		opacity: 0%;
+	}
+	100% {
+		transform: rotateY(180deg);
+	}
 } 
 
 @keyframes rotateReviewPanel-Full {

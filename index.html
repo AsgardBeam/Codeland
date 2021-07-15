@@ -17,15 +17,16 @@
 		<link rel="preload" as="font" href="./assets/fonts/ft_anima_Medium.otf"/>
 		<link rel="preload" as="font" href="./assets/fonts/GivenyFree.otf"/>
 		<link rel="stylesheet" href="./assets/css/main.css"/>
+		<link rel="stylesheet" href="./assets/css/responsive.css"/>
 		<link rel="stylesheet" href="./assets/css/class_utils.css"/>
 		<link rel="icon" href="./assets/images/icon.ico" type="image/x-icon"/>
 
 	</head>
 	<body>
 		<main class="flex-column-center-center" id="order-form-container">
-			<div id="major-win">
+			<div id="major-win" class="marginAuto__padding0">
 				<p id="exit" onclick="bunishForm()">&times;</p>
-				<h1 id="major-win-title">Оформить заявку на услуги</h1>
+				<h1 id="major-win-title" class="flex-column-center-center">Оформить заявку на услуги</h1>
 				<form id="form-box">
 					<div class="input-container" id="input-container-1">
 						<label for="credentials">Как можно к Вам обращаться?</label>
@@ -38,14 +39,14 @@
 					<div class="input-container" id="input-container-3">
 						<label for="email-address">Ваш e-mail:</label>
 						<input type="email" id="email-address" name="email-address" class="input-field" required placeholder="example@example.com"/>
-				</div>
-				<div class="input-container" id="input-container-4">
-					<label for="client-request">Расскажите, о чём будет Ваш запрос, какие у Вас есть вопросы.</label>
-					<textarea id="client-request" name="client-request" required></textarea>
-				</div>
-				<button class="btn" id="send-confirm">Отправить</button>
-				<p class="terms">Нажимая <big>"Отправить"</big> Вы соглашаетесь с нашей <em>политикой по обработке персональных данных</em>. <strong>theFirm</strong> обещает бережно и ответственно обращаться с вашей информацией.</p>
-			</form>
+					</div>
+					<div id="maintext-container">
+						<label for="client-request">Расскажите, о чём будет Ваш запрос, какие у Вас есть вопросы.</label>
+						<textarea id="client-request" name="client-request" required></textarea>
+					</div>
+					<button class="btn flex-column-center-center" id="send-confirm"><p>Отправить</p></button>
+					<p id="terms">Нажимая <span class="bigLetters">"Отправить"</span> Вы соглашаетесь с нашей <span class="cursiceLetters">политикой по обработке персональных данных</span><span class="bigLetters">. theFirm</span> обещает бережно и ответственно обращаться с вашей информацией.</p>
+				</form>
 			</div>
 		</main>
 		<nav id="nav-2">
@@ -69,8 +70,8 @@
 			</div>
 			<a href="#header" title="В начало" id="toheader-link"></a>
 		</div>
-		<header class="flex-left-center"  id="header">
-			<div id="overlay"></div> <!-- Чтобы затемнить фон -->
+		<header class="flex-column-left-center"  id="header">
+			<div id="overlay"></div> <!-- to make the background darker -->
 			<div id="header-skewbox"></div>
 			<h4 class="logo" title="theFrim | вымышленная компания">theFirm</h4>
 			<nav id="nav-1">
@@ -114,58 +115,52 @@
 				</div>
 			</div>
 			<div id="services-info-box">
-				<div id="circles-box">
-					<div class="circles" id="circle-1"></div>
-					<div class="circles" id="circle-2"></div>
-					<div class="circles" id="circle-3"></div>
-					<div class="circles" id="circle-4"></div>
-					<div class="circles" id="circle-5"></div>
-					<div class="circles" id="circle-6"></div>
-					<div class="circles" id="circle-7"></div>
-					<div class="circles" id="circle-8"></div>
-					<div class="circles" id="circle-9"></div>
-				</div>
+
 				<div id="service-info-card">
 					<img id="img-show" src="./assets/images/big_data.jpg" alt="изображение">
 					<p class="descriptor-1 marginAuto__padding0">Мы повысим эффективность планирования вашего труда благодаря внедрению высококлассных статистических моделей, которые включают принципы обработки больших данных и применяют системы искусственного интеллекта.</p>
 				</div>
 			</div>
 		</section>
-		<section id="portfolio" class="align-center">
-			<div id="wrapper-portfolio-heading">
-				<h1 class="title" id="portfolio-heading">Наше портфолио</h1>
+		<section id="portfolio">
+			<div id="portfolio-title" class="flex-row-left-center">
+				<div id="portfolio-h2-wrapper" class="flex-row-left-center">
+					<h2>НАШИ ПРОЕКТЫ</h2>
+				</div>
+				<div id="title-after-space"></div>
 			</div>
-			<div id="wrapper-the-3d-slider">
-				<div id="the-3d-slider">
-					<div class="surface" id="rotation-axis"></div>
-					<div class="surface" id="surface-1">
-						<p class="descriptor-1"><br/><big><strong>Интегратор</strong></big><br/><br/>Синхронизировать и объединить все социальные сети в одном удобном мобильном приложении, быть на волне всех важных событий.</p>
-					</div>
-					<div class="surface" id="surface-2">
-						<p class="descriptor-1"><br/><big><strong>NiceView</strong></big><br/><br/>Продвинутая браузерная камера для мобильного телефона, использующая матрицу искусственного интеллекта.</p>
-					</div>
-					<div class="surface" id="surface-3">
-						<p class="descriptor-1"><br/><big><strong>Янгуг</strong></big><br/><br/>Система веб-услуг высшего класса, сравнимая с веб-порталами Яндекс и Google.</p>
-					</div>
-					<div class="surface" id="surface-4">
-						<p class="descriptor-1"><br/><big><strong>Небобиты</strong></big><br/><br/>Интерактивное хранилище информации, произведённой алгоритмами обработки больших данных, которым пользуются миллионы.</p>
-					</div>
-					<div class="surface" id="surface-5">
-						<p class="descriptor-1"><br/><big><strong>SmartМашины1</strong></big><br/><br/>Веб-сайт лидирующей на рынке робототехники компании, которая славится беспилотными умными экскаваторами.</p>
-					</div>
-					<div class="surface" id="surface-6">
-						<p class="descriptor-1"><br/><big><strong>Око</strong></big><br/><br/>Динамичная система наблюдения за отрытыми общественными потоками больших данных с целью прогнозирования.</p>
-					</div>
-					<div class="surface" id="surface-7">
-						<p class="descriptor-1"><br/><big><strong>iБизнесток700</strong></big><br/><br/>Мы с гордостью сообщаем, что выполнили главную роль в цифровой модернизации холдинга iБизнесток700.</p>
-					</div>
-					<div class="surface" id="surface-8">
-						<p class="descriptor-1"><br/><big><strong>PaintGreat</strong></big><br/><br/><small>Популярный браузерный редактор графики, рисующий за Вас, на основе голосовых приказов и текстовых сообщений.</small></p>
-					</div>
+			<div id="portfolio-project-name" class="flex-column-center-center">
+				<h3 id="project-name-h3">Интегратор</h3>
+			</div>
+			<div id="portfolio-card-container">
+				<div id="portfolio-card">
+					<!-- <div id="portfolio-card-content-wrapper"> mainly exists in order to mirror the content which apperance is reversed by the animation, so things can look normal again -->
+					<div id="portfolio-card-content-wrapper">
+						<div id="image-container">
+							<img src="./assets/images/product_1.png" alt="Изображение проекта" title="Проект команды theFirm" id="portfolio-image"/>
+						</div>
+						<p class="flex-column-center-center" id="portfolio-card-description">Синхронизировать и объединить все социальные сети в одном удобном мобильном приложении, быть на волне всех важных событий.</p>
+					</div> 
 				</div>
 			</div>
-			<div class="action-box" id="call-to-action-2">
-				<a class="button-action">ОФОРМИТЬ</a>
+			<div id="portfolio-controls" class="flex-column-center-center">
+				<div id="the-controls">
+					<div id="controls-arrow-top" class="portfolio-arrow flex-column-center-center">
+						<div class="portfolio-arrow-left"></div>
+						<div class="portfolio-arrow-right"></div>
+						<div class="portfolio-arrow-line"></div>
+					</div>
+					<div id="portfolio-controls-circle-container" class="flex-column-center-center">
+						<div id="portfolio-circle"></div>	
+					</div>
+					<div id="controls-arrow-bottom" class="portfolio-arrow flex-column-center-center">
+						<div class="portfolio-arrow-left"></div>
+						<div class="portfolio-arrow-right"></div>
+						<div class="portfolio-arrow-line"></div>
+					</div>
+				</div>
+				<div id="the-overlay">
+				</div>
 			</div>
 		</section>
 		<section id="reviews">
@@ -278,7 +273,7 @@
 			</div>
 		</section>
 		<footer id="footer" class="grid-space-around-center">
-			<div class="special-options-list flex-left-center">
+			<div class="special-options-list flex-column-left-center">
 				<h2>Навигация</h2>
 				<ul>
 					<li><a href="#header" title="Начало" class="footer-link">Титул</a></li>
@@ -291,7 +286,7 @@
 			<div class="action-box marginAuto__padding0" id="call-to-action-3">
 				<a class="button-action">ОФОРМИТЬ</a>
 			</div>
-			<div class="special-options-list flex-left-center">
+			<div class="special-options-list flex-column-left-center">
 				<address class="descriptor-1 marginAuto__padding0 align-left"><br><br>Адрес</br></br>4586465, г. Винтерфелл, ул. Брана, д. 18, корп. 8
 				</address>
 			</div>

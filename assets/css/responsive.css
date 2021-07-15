@@ -1,4 +1,43 @@
-@media all and (var(--viewport-desktop)) {
-	
+@media all and (max-height: 750px) {
+	#major-win {
+		min-width: 70%;
+		max-width: 70%;
+	}
+}
+
+@media all and (max-height: 600px) {
+	#order-form-container {
+		display: block;
+		min-height: 100vh;
+		max-height: 100vh;
+		height: 100vh;
+		min-width: 500rem;
+		max-width: 100vw;
+		width: 100vw;
+		overflow-y: scroll;
+		padding: 0;
+	}
+	#major-win-title  {
+		margin: auto;
+		min-width: 100vw;
+		max-width: 100vw;
+		width: 100vw;
+		min-height: 2rem;
+		max-height: 2rem;
+		height: 2rem;
+	}
+	#major-win {
+		margin: auto;
+		padding: 0%;
+		min-width: 100vw;
+		max-width: 100vw;
+		width: 100vw;
+		min-height: 1000%;
+		max-height: 1000%;
+		height: 1000%;
+		border-radius: 0;
+	}
 
 }
+
+
